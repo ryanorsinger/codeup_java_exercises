@@ -17,6 +17,7 @@ public class BattingAverage {
 
         System.out.println("Play ball!");
         Scanner sc = new Scanner(System.in);
+        Validator validator = new Validator();
 
         Batter batter = new Batter();
         System.out.print("Batter up! How many times does this batter go at bat? ");
@@ -25,8 +26,8 @@ public class BattingAverage {
         batter.arrayOfAtBats = new int[batter.atBats];
 
         for (int i = 0; i < batter.arrayOfAtBats.length; i++) {
-            System.out.print("How many bases were earned by the batter for their " + (i + 1) + " time at bat?");
-            batter.arrayOfAtBats[i] = sc.nextInt();
+
+            batter.arrayOfAtBats[i] = validator.getIntWithinRange("How many bases for this time at bat? ", 0, 4);
 
             if(batter.arrayOfAtBats[i] > 0) {
                 batter.numberOfAtBatsWithAtLeastOneBase++;
