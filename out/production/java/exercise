@@ -1,0 +1,17 @@
+# Exercises
+
+1. A teacher wants to know what percentage of men and what percentage of women are in a group of students.
+
+2. A student wants to know what his final grade in the subject of Algorithms will be. This rating consists of the following percentages:
+
+    * 55% is the average of his three partial grades.
+    * 30% is the final exam grade.
+    * 15% is the final work grade.
+
+3.  In a hospital there are three areas: Gynecology, Pediatrics and Traumatology. The annual budget of the hospital is distributed according to the following table:
+
+    * Gynecology 40%
+    * Traumatology 30%
+    * Pediatrics 30%
+
+    Obtain the amount of money that each area will receive, for any budget.
