@@ -2,8 +2,6 @@
  * Created by Moravia on 11/28/16.
  */
 import java.util.ArrayList;
-import java.util.Iterator;
-
 
 class Fruit {
     String name;
@@ -27,7 +25,7 @@ public class ArrayListDemo {
         fruits.add(anotherFruit);
 
         for (Fruit fruit : fruits) {
-            System.out.println(fruit.getName());
+            System.out.println(fruit.toString());
         }
     }
 }
