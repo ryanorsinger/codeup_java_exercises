@@ -1,31 +1,38 @@
 /**
- * Created by Moravia on 11/28/16.
+ * Created by Ryan on 11/28/16.
  */
 import java.util.ArrayList;
 
 class Fruit {
     String name;
-    Fruit(String name) {
+    String type;
+    Fruit(String type, String name) {
         this.name = name;
-    }
-
-    public String getName() {
-        return name;
+        this.type = type;
     }
 }
 
 public class ArrayListDemo {
     public static void main(String[] args) {
-        Fruit aFruit = new Fruit("Orange");
-        Fruit anotherFruit = new Fruit("Apple");
-
+        // ArrayList of fruit objects
         ArrayList<Fruit> fruits = new ArrayList<>();
 
-        fruits.add(aFruit);
-        fruits.add(anotherFruit);
+        Fruit aFruit = new Fruit("Tangerine", "Orange");
+        Fruit banana = new Fruit("red", "banana");
+        Fruit apple = new Fruit("honeycrisp", "apple");
 
-        for (Fruit fruit : fruits) {
-            System.out.println(fruit.toString());
+        fruits.add(aFruit);
+        fruits.add(banana);
+        fruits.add(apple);
+
+        // iterating across ArrayList of objects with enhanced for loop
+        for(Fruit fruit : fruits) {
+            System.out.println(fruit.type + " " + fruit.name);
+        }
+
+        // iterating across ArrayList w/ plain ol' for loop
+        for (int i = 0; i < fruits.size(); i++) {
+            System.out.println(fruits.get(i).type + " " + fruits.get(i).name);
         }
     }
 }
